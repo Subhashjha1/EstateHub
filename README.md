@@ -1,59 +1,64 @@
-# Estatehub
+# EstateHub – Real Estate Property Platform
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.30.
+EstateHub is a responsive real estate web application built with Angular. It provides a user-friendly interface for exploring properties, browsing listings, viewing property details, and submitting property enquiries.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Responsive homepage and navigation
+- Browse property listings
+- Buy and Rent property sections
+- Property search and filtering
+- Detailed property information
+- Property image gallery
+- Login and Signup UI
+- Sell Property form
+- Agent listing page
+- Contact and enquiry forms
+- Custom 404 Not Found page
 
-```bash
-ng serve
-```
+## Technology Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular
+- TypeScript
+- JavaScript
+- HTML5
+- CSS3
+- Git and GitHub
 
-## Code scaffolding
+## Installation and Setup
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Clone the repository:
 
-```bash
-ng generate component component-name
-```
+   ```bash
+   git clone https://github.com/Subhashjha1/EstateHub.git
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Navigate to the project folder:
 
-```bash
-ng generate --help
-```
+   ```bash
+   cd EstateHub
+   ```
 
-## Building
+3. Install dependencies:
 
-To build the project run:
+   ```bash
+   npm install
+   ```
 
-```bash
-ng build
-```
+4. Start the development server:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+   ```bash
+   ng serve -o
+   ```
 
-## Running unit tests
+5. Open the local URL displayed in your terminal.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Project Status
 
-```bash
-ng test
-```
+Frontend development completed. Property data and form interactions currently use demo data; backend integration is not included.
 
-## Running end-to-end tests
+## Developer
 
-For end-to-end (e2e) testing, run:
+**Subhash Jha**
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+GitHub: https://github.com/Subhashjha1
