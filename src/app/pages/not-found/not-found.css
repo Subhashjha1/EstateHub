@@ -1,0 +1,122 @@
+/* =====================================
+   ESTATEHUB - 404 PAGE
+===================================== */
+
+.not-found-section {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 6%;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.not-found-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* ERROR CODE */
+
+.error-code {
+    display: block;
+    color: #2563eb;
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -8px;
+}
+
+/* ERROR ICON */
+
+.error-icon {
+    width: 65px;
+    height: 65px;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dbeafe;
+    color: #2563eb;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+/* TEXT */
+
+.not-found-container h1 {
+    color: #172554;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.not-found-container p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+
+.error-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.home-button,
+.properties-button {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.home-button {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.home-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+.properties-button {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.properties-button:hover {
+    background: #bfdbfe;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    .error-code {
+        font-size: 90px;
+    }
+
+    .not-found-container h1 {
+        font-size: 26px;
+    }
+
+    .error-actions {
+        flex-direction: column;
+    }
+
+    .home-button,
+    .properties-button {
+        width: 100%;
+    }
+
+}

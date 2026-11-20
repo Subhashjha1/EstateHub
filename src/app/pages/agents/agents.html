@@ -1,0 +1,72 @@
+<section class="agents-section">
+
+  <div class="agents-container">
+
+    <!-- PAGE HEADING -->
+    <div class="agents-heading">
+      <span class="section-tag">MEET OUR EXPERTS</span>
+      <h1>Find Your Perfect Property Agent</h1>
+      <p>Connect with experienced professionals who understand your property needs.</p>
+    </div>
+
+    <!-- AGENTS GRID -->
+    <div class="agents-grid">
+
+      <article class="agent-card" *ngFor="let agent of agents">
+
+        <!-- AGENT IMAGE -->
+        <div class="agent-image">
+          <img [src]="agent.image" [alt]="agent.name">
+        </div>
+
+        <!-- AGENT INFORMATION -->
+        <div class="agent-info">
+
+          <span class="agent-experience">
+            {{ agent.experience }}
+          </span>
+
+          <h2>{{ agent.name }}</h2>
+
+          <p class="agent-role">
+            {{ agent.role }}
+          </p>
+
+          <p class="agent-location">
+            📍 {{ agent.location }}
+          </p>
+
+          <div class="agent-stats">
+            <div>
+              <strong>{{ agent.properties }}+</strong>
+              <span>Properties</span>
+            </div>
+
+            <div>
+              <strong>Expert</strong>
+              <span>Consultant</span>
+            </div>
+          </div>
+
+          <!-- CONTACT DETAILS -->
+          <div class="agent-contact">
+
+            <a [href]="'tel:' + agent.phone" class="agent-phone">
+              Call Agent
+            </a>
+
+            <a [href]="'mailto:' + agent.email" class="agent-email">
+              Email Agent
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>

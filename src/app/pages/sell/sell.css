@@ -1,0 +1,156 @@
+/* SELL PROPERTY PAGE */
+
+.sell-section {
+    padding: 65px 20px 90px;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.sell-container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.sell-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-tag {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #dbeafe;
+    color: #2563eb;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.sell-heading h1 {
+    margin-top: 18px;
+    color: #172554;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.sell-heading p {
+    margin-top: 12px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* FORM CARD */
+
+.sell-card {
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+}
+
+.sell-card h2 {
+    margin-bottom: 25px;
+    color: #172554;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.owner-heading {
+    margin-top: 35px;
+    padding-top: 28px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    color: #172554;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #172554;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* SUBMIT BUTTON */
+
+.sell-submit-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.sell-submit-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* SUCCESS MESSAGE */
+
+.sell-success {
+    padding: 45px 25px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #bbf7d0;
+    border-radius: 14px;
+}
+
+.sell-success h2 {
+    color: #15803d;
+    font-size: 25px;
+}
+
+.sell-success p {
+    margin-top: 12px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    .sell-section {
+        padding: 45px 15px 60px;
+    }
+
+    .sell-heading h1 {
+        font-size: 27px;
+    }
+
+    .sell-card {
+        padding: 23px;
+    }
+}

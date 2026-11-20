@@ -1,0 +1,216 @@
+/* =====================================
+   ESTATEHUB - LOGIN PAGE
+===================================== */
+
+.login-section {
+    min-height: calc(100vh - 82px);
+    padding: 70px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f9;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 1050px;
+    min-height: 580px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+/* BRANDING SECTION */
+
+.login-brand {
+    padding: 65px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #172554;
+    color: #ffffff;
+}
+
+.brand-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2563eb;
+    border-radius: 13px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.login-brand h1 {
+    margin-top: 35px;
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.login-brand > p {
+    margin-top: 18px;
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.brand-decoration {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 55px;
+}
+
+.brand-decoration span {
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* LOGIN FORM */
+
+.login-form-wrapper {
+    padding: 65px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-heading h2 {
+    font-size: 32px;
+    color: #172554;
+}
+
+.form-heading p {
+    margin-top: 10px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* FORM INPUTS */
+
+.login-form {
+    margin-top: 35px;
+}
+
+.form-group {
+    margin-bottom: 23px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    color: #172554;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* FORM OPTIONS */
+
+.form-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.remember-option {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #64748b;
+}
+
+.form-options a,
+.signup-prompt a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* SUBMIT BUTTON */
+
+.login-submit {
+    width: 100%;
+    margin-top: 30px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.login-submit:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* SIGNUP PROMPT */
+
+.signup-prompt {
+    margin-top: 28px;
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 750px) {
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .login-brand {
+        padding: 40px 30px;
+    }
+
+    .login-brand h1 {
+        font-size: 30px;
+    }
+
+    .brand-decoration {
+        margin-top: 30px;
+    }
+
+    .login-form-wrapper {
+        padding: 45px 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .login-section {
+        padding: 30px 5%;
+    }
+
+    .form-options {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

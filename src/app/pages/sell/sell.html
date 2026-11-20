@@ -1,0 +1,78 @@
+<section class="sell-section">
+
+  <div class="sell-container">
+
+    <div class="sell-heading">
+      <span class="section-tag">LIST YOUR PROPERTY</span>
+      <h1>Sell Your Property with EstateHub</h1>
+      <p>Share your property details and connect with potential buyers.</p>
+    </div>
+
+    <div class="sell-card" *ngIf="!submitted; else successMessage">
+
+      <form (ngSubmit)="submitProperty()">
+
+        <h2>Property Information</h2>
+
+        <div class="form-group">
+          <label for="propertyTitle">Property Title</label>
+          <input id="propertyTitle" name="propertyTitle" [(ngModel)]="propertyTitle"
+            placeholder="e.g. Modern Luxury Villa" required>
+        </div>
+
+        <div class="form-group">
+          <label for="propertyType">Property Type</label>
+          <select id="propertyType" name="propertyType" [(ngModel)]="propertyType" required>
+            <option value="">Select property type</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Independent House">Independent House</option>
+            <option value="Villa">Villa</option>
+            <option value="Plot">Plot</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Property Location</label>
+          <input id="location" name="location" [(ngModel)]="location" placeholder="Enter city or area" required>
+        </div>
+
+        <div class="form-group">
+          <label for="price">Expected Price</label>
+          <input id="price" name="price" [(ngModel)]="price" placeholder="e.g. ₹75 Lakh" required>
+        </div>
+
+        <h2 class="owner-heading">Owner Information</h2>
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" [(ngModel)]="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" [(ngModel)]="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" [(ngModel)]="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <button type="submit" class="sell-submit-btn">
+          Submit Property
+        </button>
+
+      </form>
+
+    </div>
+
+    <ng-template #successMessage>
+      <div class="sell-success">
+        <h2>Property Submitted Successfully!</h2>
+        <p>Thank you for choosing EstateHub. Our team will review your details.</p>
+      </div>
+    </ng-template>
+
+  </div>
+
+</section>

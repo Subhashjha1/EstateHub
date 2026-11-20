@@ -1,0 +1,193 @@
+/* =====================================
+   ESTATEHUB - SIGNUP PAGE
+===================================== */
+
+.signup-section {
+    min-height: calc(100vh - 82px);
+    padding: 70px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f9;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+/* BRANDING */
+
+.signup-brand {
+    padding: 65px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #172554;
+    color: #ffffff;
+}
+
+.brand-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2563eb;
+    border-radius: 13px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.signup-brand h1 {
+    margin-top: 35px;
+    font-size: 38px;
+}
+
+.signup-brand > p {
+    margin-top: 18px;
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.brand-features {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 45px;
+}
+
+.brand-features span {
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* SIGNUP FORM */
+
+.signup-form-wrapper {
+    padding: 55px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-heading h2 {
+    font-size: 32px;
+    color: #172554;
+}
+
+.form-heading p {
+    margin-top: 10px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.signup-form {
+    margin-top: 28px;
+}
+
+.form-group {
+    margin-bottom: 19px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #172554;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* TERMS */
+
+.terms-option {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 10px;
+}
+
+.terms-option label {
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* SUBMIT BUTTON */
+
+.signup-submit {
+    width: 100%;
+    margin-top: 25px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.signup-submit:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* LOGIN PROMPT */
+
+.login-prompt {
+    margin-top: 25px;
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.login-prompt a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+    .signup-container {
+        grid-template-columns: 1fr;
+    }
+
+    .signup-brand {
+        padding: 40px 30px;
+    }
+
+    .signup-form-wrapper {
+        padding: 45px 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .signup-section {
+        padding: 30px 5%;
+    }
+}

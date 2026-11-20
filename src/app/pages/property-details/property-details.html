@@ -1,0 +1,192 @@
+<section class="details-section" *ngIf="property; else propertyNotFound">
+
+  <div class="details-container">
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+      <a routerLink="/">Home</a>
+      <span>/</span>
+      <a routerLink="/properties">Properties</a>
+      <span>/</span>
+      <span>{{ property.title }}</span>
+    </div>
+
+    <!-- PROPERTY HEADING -->
+    <div class="details-heading">
+
+      <div>
+        <span class="details-type">{{ property.type }}</span>
+        <h1>{{ property.title }}</h1>
+        <p class="details-location">📍 {{ property.location }}</p>
+      </div>
+
+      <div class="details-price">
+        <span>{{ property.status }}</span>
+        <h2>{{ property.price }}</h2>
+      </div>
+
+    </div>
+
+    <!-- PROPERTY IMAGE GALLERY -->
+    <div class="details-gallery">
+
+      <div class="main-gallery-image">
+        <img [src]="property.image" [alt]="property.title" (click)="openImage(property.image)">
+      </div>
+
+      <div class="gallery-side">
+
+        <img *ngFor="let image of galleryImages" [src]="image" alt="Property interior"
+          [class.active-thumbnail]="property.image === image" (click)="property.image = image">
+
+      </div>
+
+    </div>
+
+    <!-- PROPERTY INFORMATION -->
+    <div class="details-layout">
+
+      <div class="details-main">
+
+        <!-- PROPERTY OVERVIEW -->
+        <div class="details-card">
+
+          <h2>Property Overview</h2>
+
+          <p class="property-description">
+            {{ property.description }}
+          </p>
+
+          <div class="overview-grid">
+
+            <div class="overview-item">
+              <span>🛏</span>
+              <div>
+                <h4>{{ property.beds }}</h4>
+                <p>Bedrooms</p>
+              </div>
+            </div>
+
+            <div class="overview-item">
+              <span>🛁</span>
+              <div>
+                <h4>{{ property.baths }}</h4>
+                <p>Bathrooms</p>
+              </div>
+            </div>
+
+            <div class="overview-item">
+              <span>📐</span>
+              <div>
+                <h4>{{ property.area }}</h4>
+                <p>Property Area</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- PROPERTY AMENITIES -->
+        <div class="details-card">
+
+          <h2>Property Amenities</h2>
+
+          <div class="amenities-grid">
+
+            <div class="amenity-item" *ngFor="let amenity of property.amenities">
+              <span class="amenity-check">✓</span>
+              {{ amenity }}
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- PROPERTY DESCRIPTION -->
+        <div class="details-card">
+
+          <h2>About This Property</h2>
+
+          <p class="property-description">
+            This property offers a comfortable and
+            modern living experience. Explore its
+            features and discover whether it matches
+            your lifestyle and requirements.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CONTACT SIDEBAR -->
+      <aside class="contact-card">
+
+        <span class="contact-tag">INTERESTED?</span>
+
+        <h2>Get More Information</h2>
+
+        <p>
+          Connect with our property team to learn
+          more about this listing.
+        </p>
+
+        <button type="button" class="contact-button" (click)="scrollToEnquiry()">
+          Contact Agent
+        </button>
+
+        <button type="button" class="schedule-button" (click)="scrollToEnquiry()">
+          Schedule a Visit
+        </button>
+
+        <div class="contact-divider"></div>
+
+        <div class="contact-info">
+          <span>Property ID</span>
+          <strong>EH-{{ property.id }}</strong>
+        </div>
+
+        <div class="contact-info">
+          <span>Property Type</span>
+          <strong>{{ property.type }}</strong>
+        </div>
+
+        <div class="contact-info">
+          <span>Availability</span>
+          <strong>{{ property.status }}</strong>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+  <!-- CONTACT ENQUIRY FORM -->
+  <app-contact-enquiry></app-contact-enquiry>
+
+</section>
+
+<!-- PROPERTY NOT FOUND -->
+<ng-template #propertyNotFound>
+
+  <section class="property-not-found">
+    <h1>Property Not Found</h1>
+
+    <p>Sorry, this property is currently unavailable.</p>
+
+    <a routerLink="/properties">Back to Properties</a>
+  </section>
+
+</ng-template>
+
+<!-- IMAGE PREVIEW MODAL -->
+<div class="image-modal" *ngIf="selectedImage" (click)="closeImage()">
+
+  <button type="button" class="close-modal" (click)="closeImage(); $event.stopPropagation()">
+    &times;
+  </button>
+
+  <img [src]="selectedImage" alt="Enlarged property image" (click)="$event.stopPropagation()">
+
+</div>

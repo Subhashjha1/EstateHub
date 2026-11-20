@@ -1,0 +1,44 @@
+<nav class="navbar">
+  <div class="navbar-container">
+
+    <!-- LOGO -->
+    <a routerLink="/" class="logo">
+      <span class="logo-icon">E</span>
+      <span>Estate<span class="logo-highlight">Hub</span></span>
+    </a>
+
+    <!-- NAVIGATION LINKS -->
+    <ul class="nav-links">
+      <li>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      </li>
+
+      <li>
+        <a [routerLink]="['/properties']" [queryParams]="{ status: 'Buy' }">
+          Buy
+        </a>
+      </li>
+
+      <li>
+        <a [routerLink]="['/properties']" [queryParams]="{ status: 'Rent' }">
+          Rent
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/sell" routerLinkActive="active">Sell</a>
+      </li>
+
+      <li>
+        <a routerLink="/agents" routerLinkActive="active">Agents</a>
+      </li>
+    </ul>
+
+    <!-- NAVBAR ACTIONS -->
+    <div class="nav-actions">
+      <a routerLink="/login" class="login-btn">Log In</a>
+      <a routerLink="/signup" class="signup-btn">Sign Up</a>
+    </div>
+
+  </div>
+</nav>

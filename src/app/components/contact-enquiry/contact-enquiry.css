@@ -1,0 +1,138 @@
+/* CONTACT ENQUIRY SECTION */
+
+.enquiry-section {
+    padding: 70px 20px;
+    background: #f8fafc;
+}
+
+.enquiry-container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.enquiry-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-tag {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #dbeafe;
+    color: #2563eb;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.enquiry-heading h2 {
+    margin-top: 18px;
+    color: #172554;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.enquiry-heading p {
+    margin-top: 10px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.enquiry-card {
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    color: #172554;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    color: #172554;
+    font-size: 14px;
+    font-family: inherit;
+    transition: 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* SUCCESS MESSAGE */
+
+.success-message {
+    padding: 45px 25px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #bbf7d0;
+    border-radius: 14px;
+}
+
+.success-message h3 {
+    color: #15803d;
+    font-size: 26px;
+}
+
+.success-message p {
+    margin-top: 12px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+    .enquiry-section {
+        padding: 50px 15px;
+    }
+
+    .enquiry-card {
+        padding: 22px;
+    }
+
+    .enquiry-heading h2 {
+        font-size: 26px;
+    }
+}
